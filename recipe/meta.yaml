@@ -1,4 +1,4 @@
-{% set version = '1.2.5' %}
+{% set version = "1.2.6" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rnpn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rnpn/rnpn_{{ version }}.tar.gz
-  sha256: 0900bff533e5ee281b309a91c307c6b19482f2a60136e7d8e84ba7da56346a0a
+  sha256: 24470b3b825667d68e2dc59b308b12f66dfe570556a4ec17a26f73573f3a7201
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -61,9 +61,7 @@ test:
 about:
   home: https://github.com/usa-npn/rnpn/ (devel)
   license: MIT
-  summary: Programmatic interface to the Web Service methods provided by the National 'Phenology'
-    Network (<https://usanpn.org/>), which includes data on various life history events
-    that occur at specific times.
+  summary: Programmatic interface to the Web Service methods provided by the National 'Phenology' Network (<https://usanpn.org/>), which includes data on various life history events that occur at specific times.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
