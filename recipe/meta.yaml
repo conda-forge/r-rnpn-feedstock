@@ -1,4 +1,4 @@
-{% set version = "1.2.8.0" %}
+{% set version = "1.2.9.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rnpn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rnpn/rnpn_{{ version }}.tar.gz
-  sha256: 5c8882542cd18efbb13db8318b8534e1986c0964f9051a5928c51cedaead6aeb
+  sha256: 1cb0d3fc5e72907858ef6764be2bd9e87d3731ecdc6900d5e4b32f921f609d36
 
 build:
   merge_build_host: true  # [win]
