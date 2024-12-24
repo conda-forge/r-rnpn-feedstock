@@ -33,7 +33,6 @@ requirements:
     - r-magrittr
     - r-plyr
     - r-raster
-    - r-rgdal
     - r-sp >=1.1_0
     - r-tibble
 
@@ -47,7 +46,6 @@ requirements:
     - r-magrittr
     - r-plyr
     - r-raster
-    - r-rgdal
     - r-sp >=1.1_0
     - r-tibble
 
