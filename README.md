@@ -3,11 +3,13 @@ About r-rnpn-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rnpn-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/usa-npn/rnpn/ (devel)
+Home: https://usa-npn.github.io/rnpn/
 
 Package license: MIT
 
 Summary: Programmatic interface to the Web Service methods provided by the National 'Phenology' Network (<https://usanpn.org/>), which includes data on various life history events that occur at specific times.
+
+Development: https://github.com/usa-npn/rnpn/
 
 Current build status
 ====================
