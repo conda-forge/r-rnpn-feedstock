@@ -1,5 +1,4 @@
 {% set version = "1.3.0" %}
-
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -22,7 +21,6 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
-
   host:
     - r-base
     - r-dplyr
@@ -33,11 +31,10 @@ requirements:
     - r-tidyr
     - r-xml2
     - r-yyjsonr 
-
   run:
     - r-base
     - r-dplyr
-    - r-httr2 >=1.10
+    - r-httr2 >=1.1.0
     - r-magrittr
     - r-rlang
     - r-tibble
@@ -51,40 +48,16 @@ test:
     - "\"%R%\" -e \"library('rnpn')\""  # [win]
 
 about:
-  home: https://github.com/usa-npn/rnpn/ (devel)
+  home: https://usa-npn.github.io/rnpn/
+  dev_url: https://github.com/usa-npn/rnpn/
   license: MIT
   summary: Programmatic interface to the Web Service methods provided by the National 'Phenology' Network (<https://usanpn.org/>), which includes data on various life history events that occur at specific times.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
   recipe-maintainers:
     - conda-forge/r
     - thewchan
-
-# The original CRAN metadata for this package was:
-
-# Package: rnpn
-# Title: Interface to the National 'Phenology' Network 'API'
-# Description: Programmatic interface to the Web Service methods provided by the National 'Phenology' Network (<https://usanpn.org/>), which includes data on various life history events that occur at specific times.
-# Version: 1.2.5
-# License: MIT + file LICENSE
-# Authors@R: c( person("Alyssa", "Rosemartin", role = c("aut", "cre"), email = "alyssa@usanpn.org"), person("Scott", "Chamberlain", role = "aut"), person("Lee", "Marsh", role= "aut", email = "lee@usanpn.org"), person("Kevin", "Wong", role = "aut", email = "kevin@usanpn.org"), person("David", "LeBauer", role = "ctb", email = "dlebauer@arizona.edu") )
-# Depends: R (>= 3.5.0)
-# Imports: httr (>= 1.1.0), jsonlite (>= 0.9.19), data.table (>= 1.9.6), sp (>= 1.1-0), tibble, curl, raster, rgdal, plyr, XML, magrittr
-# Suggests: ggplot2, testthat, covr, knitr, markdown, rmarkdown, RColorBrewer, vcr
-# RoxygenNote: 7.1.2
-# VignetteBuilder: knitr
-# URL: https://github.com/usa-npn/rnpn/ (devel)
-# NeedsCompilation: no
-# Packaged: 2022-04-20 22:09:22 UTC; usanpn
-# Author: Alyssa Rosemartin [aut, cre], Scott Chamberlain [aut], Lee Marsh [aut], Kevin Wong [aut], David LeBauer [ctb]
-# Maintainer: Alyssa Rosemartin <alyssa@usanpn.org>
-# Repository: CRAN
-# Date/Publication: 2022-04-20 22:30:02 UTC
-
-# See
-# https://docs.conda.io/projects/conda-build for
-# more information about meta.yaml
