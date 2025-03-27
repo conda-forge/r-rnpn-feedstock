@@ -25,22 +25,24 @@ requirements:
     - r-base
     - r-dplyr
     - r-httr2 >=1.1.0
+    - r-jsonlite
+    - r-lifecycle
     - r-magrittr
     - r-rlang
     - r-tibble
     - r-tidyr
     - r-xml2
-    - r-yyjsonr
   run:
     - r-base
     - r-dplyr
     - r-httr2 >=1.1.0
+    - r-jsonlite
+    - r-lifecycle
     - r-magrittr
     - r-rlang
     - r-tibble
     - r-tidyr
     - r-xml2
-    - r-yyjsonr
 
 test:
   commands:
