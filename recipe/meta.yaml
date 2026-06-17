@@ -1,4 +1,4 @@
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rnpn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rnpn/rnpn_{{ version }}.tar.gz
-  sha256: fcecb40ea47b58f50316c0244a3be48e21687c418b8008421969389244be4135
+  sha256: 5ef7905f4db6c2c03893058c005bddcc413135959b7cf3778ae16c94839a1f59
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
